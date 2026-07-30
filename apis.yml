@@ -1,7 +1,24 @@
 aid: meragi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/meragi.png
 name: Meragi
-description: Meragi is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Meragi is an Indian wedding planning and execution platform for city
+  and destination weddings, offering a plug-and-play alternative to bare-shell venues.
+  It coordinates venue discovery, decor design (10,000+ options), catering, photography,
+  vendor management, and multi-event logistics across Bangalore, Hyderabad, Goa, Delhi
+  NCR, Jaipur, and Udaipur. Backed by Accel, the company runs a consumer-facing web
+  presence with no public developer, API, or integration surface as of this enrichment
+  pass.
 url: https://raw.githubusercontent.com/api-evangelist/meragi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Weddings
+- Events
+- Marketplace
+- Hospitality
+- Consumer
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/meragi-domain-security.yml
 - type: Website
   url: https://www.meragi.com/
+- type: Blog
+  url: https://www.meragi.com/blogs
+- type: PrivacyPolicy
+  url: https://www.meragi.com/privacy-policy
+- type: TermsOfService
+  url: https://www.meragi.com/terms-and-conditions
+- type: Support
+  url: mailto:care@meragi.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
